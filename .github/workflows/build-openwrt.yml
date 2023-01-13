@@ -47,6 +47,8 @@ jobs:
         root-reserve-mb: 8196
         swap-size-mb: 1024
         remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
           
     - name: Checkout
       uses: actions/checkout@main
