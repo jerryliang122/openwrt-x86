@@ -40,10 +40,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
-      with:
-          ref: main
-          fetch-depth: 0
+      uses: actions/checkout@main
  
         
     - name: Initialization environment
@@ -70,7 +67,6 @@ jobs:
       uses: klever1988/cachewrtbuild@main
       with:
         ccache: 'true'
-        mixkey: 'ramips'
         prefix: ${{ github.workspace }}/openwrt
     
     - name: Load custom feeds
