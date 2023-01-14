@@ -193,6 +193,3 @@ jobs:
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-       
-Update build-openwrt.yml · jerryliang122/openwrt-x86@04ffed8
