@@ -17,5 +17,5 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git;dev' >>feeds.conf.default
-echo 'https://github.com/DRAWCORE/luci-app-qos-emong.git' >>feeds.conf.default
+echo 'src-git emong https://github.com/DRAWCORE/luci-app-qos-emong.git' >>feeds.conf.default
 #echo 'src-git openwrt https://github.com/openwrt/packages.git' >>feeds.conf.default
