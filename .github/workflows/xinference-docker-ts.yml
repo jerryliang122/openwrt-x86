@@ -31,4 +31,4 @@ jobs:
               password: ${{ secrets.TENCENT_CLOUD_PASSWORD }}
     
           - name: Push Docker Image to Tencent Cloud
-            run: docker push ccr.ccs.tencentyun.com/my-repo/xinference:latest-cpu
+            run: docker push ccr.ccs.tencentyun.com/jerryliang/xin:latest-cpu
