@@ -27,7 +27,7 @@ git remote add -f origin https://github.com/vernesong/OpenClash.git
 git config core.sparsecheckout true
 echo "luci-app-openclash" >> .git/info/sparse-checkout
 git pull --depth 1 origin dev
-git branch --set-upstream-to=origin/master master
+git branch --set-upstream-to=origin/dev dev
 
 # 编译 po2lmo (如果有po2lmo可跳过)
 pushd luci-app-openclash/tools/po2lmo
