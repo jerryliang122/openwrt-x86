@@ -117,11 +117,13 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
     - name: SSH connection to Actions
-      uses: tmshkr/ngrok-ssh@latest
+      uses: askme888/ssh2actions@latest
       if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
       with:
-        NGROK_AUTHTOKEN: ${{ secrets.NGROK_TOKEN }}
-        run: npm start
+        mode: ngrok
+      env:
+        NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
 
        
       
