@@ -179,8 +179,8 @@ jobs:
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: openwrt-x86-64-generic-squashfs-combined.img
-        path: openwrt/bin/targets/*/*/openwrt-x86-64-generic-squashfs-combined.img
+        name: openwrt-x86-64-generic-squashfs-combined.img.gz
+        path: ${{ env.FIRMWARE }}/openwrt-x86-64-generic-squashfs-combined.img.gz
 
     - name: Upload firmware to cowtransfer
       id: cowtransfer
